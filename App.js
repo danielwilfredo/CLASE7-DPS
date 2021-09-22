@@ -187,22 +187,8 @@ function Pantalla1() {
       <Text style={{textAlign:'justify', padding:15}}>
       El Santiago Bernabéu (llamado así en honor al mítico dirigente madridista, que presidió el club de 1943 a 1978) fue inaugurado en 1947 y en la actualidad puede albergar a más de 80 000 espectadores. El estadio cuenta, además, con 245 palcos VIP.      </Text>
     <Text>
-    
-
-
     </Text>
-
-
     </ScrollView>
-  );
-}
-
-
-function Pan2(){
-   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Mi primer tab!</Text>
-    </View>
   );
 }
 
@@ -213,10 +199,10 @@ function MyTabs() {
     <Tab.Navigator
       initialRouteName="Inicio"
       screenOptions={{
-        tabBarActiveTintColor: '#e91e63',
-        tabBarActiveBackgroundColor: "#feb72b",
+        tabBarActiveTintColor: '#40afbf',
+        tabBarActiveBackgroundColor: "#cccccc",
         tabBarInactiveTintColor: "#FFF",
-        tabBarInactiveBackgroundColor: "#527318"
+        tabBarInactiveBackgroundColor: "#697689"
       }}
     >
       <Tab.Screen
@@ -230,22 +216,22 @@ function MyTabs() {
         }}
       />
       <Tab.Screen
-        name="Profile"
+        name="Jugadores"
         component={Profile}
         options={{
-          tabBarLabel: 'Profile',
+          tabBarLabel: 'Jugadores',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="account" color={color} size={size} />
           ),
         }}
       />
       <Tab.Screen
-        name="Pantalla1"
+        name="Estadio"
         component={Pantalla1}
         options={{
-          tabBarLabel: 'Ejemplo',
+          tabBarLabel: 'Estadio',
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="baby-face" color={color} size={size} />
+            <MaterialCommunityIcons name="stadium-variant" color={color} size={size} />
           ),
         }}
       />
